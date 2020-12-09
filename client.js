@@ -12,7 +12,7 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log('server says:', data);
   });
-  // not working //
+
   conn.on('connect', () => { 
     conn.write('Name: JOE');
   });
